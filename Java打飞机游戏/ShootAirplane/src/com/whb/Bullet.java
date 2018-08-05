@@ -6,7 +6,7 @@ public class Bullet extends FlyingObject {
 	public Bullet(int x, int y) {
 		this.x = x;
 		this.y = y;
-		this.image = Game.bullet;
+		this.image = Main.bullet;
 	}
 
 	@Override

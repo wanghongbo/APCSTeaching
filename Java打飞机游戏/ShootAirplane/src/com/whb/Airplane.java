@@ -4,9 +4,9 @@ public class Airplane extends FlyingObject implements Enemy {
 	private int speed = 3;
 	
 	public Airplane() {
-		this.x = (int)(Math.random() * (Game.WIDTH - this.width + 1));
+		this.x = (int)(Math.random() * (Main.WIDTH - this.width + 1));
 		this.y = -this.height;
-		this.image = Game.airplane;
+		this.image = Main.airplane;
 		width = this.image.getWidth();
 		height = this.image.getHeight();
 	}
@@ -18,7 +18,7 @@ public class Airplane extends FlyingObject implements Enemy {
 
 	@Override
 	public boolean outOfBounds() {
-		return this.y > Game.HEIGHT + this.height;
+		return this.y > Main.HEIGHT + this.height;
 	}
 
 	@Override

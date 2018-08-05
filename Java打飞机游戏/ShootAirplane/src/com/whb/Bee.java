@@ -6,9 +6,9 @@ public class Bee extends FlyingObject implements Award {
 	private int awardType;
 	
 	public Bee() {
-		this.x = (int)(Math.random() * (Game.WIDTH - this.width + 1));
+		this.x = (int)(Math.random() * (Main.WIDTH - this.width + 1));
 		this.y = -this.height;
-		this.image = Game.bee;
+		this.image = Main.bee;
 		this.width = this.image.getWidth();
 		this.height = this.image.getHeight();
 		this.awardType = (int)(Math.random() * 2);
@@ -21,12 +21,12 @@ public class Bee extends FlyingObject implements Award {
 
 	@Override
 	public boolean outOfBounds() {
-		return this.y > Game.HEIGHT + this.height;
+		return this.y > Main.HEIGHT + this.height;
 	}
 
 	@Override
 	public void move() {
-		if(this.x + xSpeed > Game.WIDTH - this.width || this.x + xSpeed < 0) {
+		if(this.x + xSpeed > Main.WIDTH - this.width || this.x + xSpeed < 0) {
 			xSpeed = -xSpeed;
 		}
 		this.x += xSpeed;
