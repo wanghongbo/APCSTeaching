@@ -58,7 +58,7 @@ public class ConnectN {
     }
 
     public boolean setN(int newN) {
-        int max = this.width > this.height ? this.width : this.height - 1;
+        int max = (this.width > this.height ? this.width : this.height) - 1;
         if(this.width > 0 && this.height > 0 && newN >= 4 && newN <= max && !this.isStarted) {
             this.N = newN;
             return true;
@@ -89,7 +89,6 @@ public class ConnectN {
     }
 
     public ConnectN() {
-
     }
 
     public ConnectN(int setWidth, int setHeight) {
@@ -110,23 +109,29 @@ public class ConnectN {
         if(setX < 0 || setX >= this.width || setY < 0 || setY >= this.height ) {
             return false;
         }
-        if( getBoardAt(setX, setY) != null || getBoardAt(setX, setY - 1) == null) {
+        if(getBoardAt(setX, setY) != null) {
             return false;
         }
-        if (this.isEnded()) {
+        if(setY > 0 && getBoardAt(setX, setY - 1) == null) {
+            return false;
+        }
+        if(this.getWinner() != null) {
             return false;
         }
         if(player2DArray != null) {
             player2DArray[setX][setY] = player;
+
             this.isStarted = true;
+
+            Player winner = this.getWinner();
+            if(winner != null) {
+                winner.addScore();
+            }
+
             return true;
         } else {
             return false;
         }
-    }
-
-    private boolean isEnded() {
-
     }
 
     public boolean setBoardAt(Player player, int setX) {
@@ -150,11 +155,20 @@ public class ConnectN {
     }
 
     public Player[][] getBoard() {
+        if(player2DArray == null) {
+            return null;
+        }
         if(this.width > 0 && this.height > 0) {
             Player[][] players = new Player[this.width][this.height];
-            for(int i = 0; i < this.player2DArray.length; i++) {
-                for(int j = 0; j < this.player2DArray[i].length; j++) {
-                    players[i][j] = this.player2DArray[i][j];
+            for(int i = 0; i < player2DArray.length; i++) {
+                for(int j = 0; j < player2DArray[i].length; j++) {
+                    Player player = player2DArray[i][j];
+                    if(player != null) {
+                        Player newPlayer = new Player(player);
+                        players[i][j] = newPlayer;
+                    } else {
+                        players[i][j] = null;
+                    }
                 }
             }
             return players;
@@ -164,7 +178,42 @@ public class ConnectN {
     }
 
     public Player getWinner() {
-
+        if(player2DArray == null) {
+            return null;
+        }
+        Player winner;
+        int count;
+        //row
+        for(int row = 0; row < player2DArray.length; row++) {
+            count = 1;
+            for(int col = 1; col < player2DArray[row].length; col++) {
+                if(player2DArray[row][col] != null && player2DArray[row][col].equals(player2DArray[row][col-1])) {
+                    count++;
+                } else {
+                    count = 1;
+                }
+                if(count == this.N) {
+                    winner = player2DArray[row][col];
+                    return winner;
+                }
+            }
+        }
+        //column
+        for(int col = 0; col < player2DArray[0].length; col++) {
+            count = 1;
+            for(int row = 1; row < player2DArray.length; row++) {
+                if(player2DArray[row][col] != null && player2DArray[row][col].equals(player2DArray[row-1][col])){
+                    count++;
+                } else {
+                    count = 1;
+                }
+                if(count == this.N) {
+                    winner = player2DArray[row][col];
+                    return winner;
+                }
+            }
+        }
+        return null;
     }
 
     public static ConnectN create(int width, int height, int n) {
@@ -177,24 +226,43 @@ public class ConnectN {
     }
 
     public static ConnectN[] createMany(int number, int width, int height, int n) {
-        ConnectN connect = ConnectN.create(width, height, n);
-        if(connect != null) {
-            ConnectN[] connects = new ConnectN[number];
-            connects[0] = connect;
-            for(int i = 1; i < number; i++) {
-                connects[i] = ConnectN.create(width, height, n);
+        if(number > 0) {
+            ConnectN connect = ConnectN.create(width, height, n);
+            if (connect != null) {
+                ConnectN[] connects = new ConnectN[number];
+                connects[0] = connect;
+                for (int i = 1; i < number; i++) {
+                    connects[i] = ConnectN.create(width, height, n);
+                }
+                return connects;
             }
-            return connects;
-        } else {
-            return null;
         }
+        return null;
     }
 
     public static boolean compareBoards(ConnectN firstBoard, ConnectN secondBoard) {
+        if (firstBoard == null || secondBoard == null) {
+            if (firstBoard == null && secondBoard == null) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        Player[][] arr1 = firstBoard.player2DArray;
+        Player[][] arr2 = secondBoard.player2DArray;
+        if (arr1 == null || arr2 == null) {
+            if(arr1 == null && arr2 == null) {
+                return true;
+            } else {
+                return false;
+            }
+        }
         if(firstBoard.getWidth() == secondBoard.getWidth() && firstBoard.getHeight() == secondBoard.getHeight() && firstBoard.getN() == secondBoard.getN()) {
-            for(int i = 0; i < firstBoard.player2DArray.length; i++) {
-                for(int j = 0; j < firstBoard.player2DArray[i].length; j++) {
-                    if(!firstBoard.player2DArray[i][j].equals(secondBoard.player2DArray[i][j])) {
+            for(int i = 0; i < arr1.length; i++) {
+                for(int j = 0; j < arr1[i].length; j++) {
+                    Player p1 = arr1[i][j];
+                    Player p2 = arr2[i][j];
+                    if((p1 != null && !p1.equals(p2)) || (p1 == null && p2 != null)) {
                         return false;
                     }
                 }
