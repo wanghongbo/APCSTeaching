@@ -2,7 +2,8 @@ apply plugin: 'java'
 apply plugin: 'checkstyle'
 
 repositories {
-    jcenter()
+//    jcenter()
+    maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
 }
 configurations {
     shadow
@@ -10,7 +11,8 @@ configurations {
 
 buildscript {
     repositories {
-        jcenter()
+//        jcenter()
+        maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
         maven {
             url 'https://jitpack.io'
         }
