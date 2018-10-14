@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/示例代码.iml" filepath="$PROJECT_DIR$/示例代码.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter1-示例代码.iml" filepath="$PROJECT_DIR$/Chapter1-示例代码.iml" />
     </modules>
   </component>
 </project>
