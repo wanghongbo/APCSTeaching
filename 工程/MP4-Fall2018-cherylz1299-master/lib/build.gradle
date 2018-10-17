@@ -1,0 +1,33 @@
+apply plugin: 'java'
+apply plugin: 'checkstyle'
+apply plugin: 'edu.illinois.cs.cs125.gradlegrader'
+
+dependencies {
+    testCompile 'org.testng:testng:6.10'
+    testRuntime 'net.sourceforge.pro-grade:pro-grade:1.1.1'
+}
+
+checkstyle {
+    toolVersion "8.12"
+    checkstyleTest.enabled = false
+    configFile = new File(rootDir, "config/checkstyle.xml")
+}
+
+test {
+    useTestNG()
+}
+
+javadoc {
+    source = sourceSets.main.allJava
+    destinationDir = file('../docs')
+    title = "MP4"
+    options.addBooleanOption('html5', true)
+}
+
+processTestResources {
+    exclude '**/*.js'
+}
+
+defaultTasks 'grade'
+
+// vim: ts=4:sw=4:et:ft=groovy
