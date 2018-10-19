@@ -124,7 +124,7 @@ public final class MainActivity extends AppCompatActivity {
         setBonIverBackground.setOnClickListener(v -> {
             Log.d(TAG, "Set Bon Iver background button click");
             backgroundBitmap = backgroundImages.get(R.drawable.boniver_background);
-            setForegroundBitmap(foregroundBitmap);
+            setForegroundBitmap(backgroundBitmap);
         });
         final ImageButton setCornfieldBackground = findViewById(R.id.background_cornfield);
         setCornfieldBackground.setOnClickListener(v -> {
@@ -186,6 +186,16 @@ public final class MainActivity extends AppCompatActivity {
             Log.d(TAG, "Shift down button clicked");
             startProcessImage("shiftDown");
         });
+        final ImageButton rotateLeft = findViewById(R.id.rotateLeft);
+        rotateLeft.setOnClickListener(v -> {
+            Log.d(TAG, "Rotate left button clicked");
+            startProcessImage("rotateLeft");
+        });
+        final ImageButton rotateRight = findViewById(R.id.rotateRight);
+        rotateRight.setOnClickListener(v -> {
+            Log.d(TAG, "Rotate left button clicked");
+            startProcessImage("rotateRight");
+        });
         final ImageButton flipVertical = findViewById(R.id.flipVertical);
         flipVertical.setOnClickListener(v -> {
             Log.d(TAG, "Flip vertical button clicked");
@@ -228,7 +238,7 @@ public final class MainActivity extends AppCompatActivity {
         /*
          * Start off with buttons disabled and enable them once the user loads an image.
          */
-        enableOrDisableButtons(false);
+//        enableOrDisableButtons(false);
 
         /*
          * Configure the progress bar.

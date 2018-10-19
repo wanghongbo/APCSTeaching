@@ -194,14 +194,57 @@ public class Transform {
                         newImage[i][j] = convertedImage[j][cols - i - 1];
                         break;
                     case RIGHT:
-                        newImage[i][j] = convertedImage[j][i];
+                        newImage[i][j] = convertedImage[rows - j - 1][i];
                         break;
                     default:
                         return originalImage;
                 }
             }
         }
-        return convert(newImage);
+        RGBAPixel[][] rotatedImage = fill(newImage);
+        return convert(rotatedImage);
+    }
+
+    /**
+     * fill the rotated image with FILL_VALUE.
+     *
+     * @param image the image to fill
+     * @return the filled image
+     */
+    private static RGBAPixel[][] fill(final RGBAPixel[][] image) {
+        int width = image.length;
+        int height = image[0].length;
+
+        RGBAPixel[][] newImage = new RGBAPixel[height][width];
+
+        if (width < height) {
+            int from = (height - width) / 2;
+            int to = from + width - 1;
+            for (int i = 0; i < width; i++) {
+                for (int j = 0; j < height; j++) {
+                    if (j >= from && j <= to) {
+                        newImage[j][i] = image[j - from][i + from];
+                    } else {
+                        newImage[j][i] = RGBAPixel.getFillValue();
+                    }
+                }
+            }
+        } else if (width > height) {
+            int from = (width - height) / 2;
+            int to = from + height - 1;
+            for (int i = 0; i < width; i++) {
+                for (int j = 0; j < height; j++) {
+                    if (i >= from && i <= to) {
+                        newImage[j][i] = image[j + from][i - from];
+                    } else {
+                        newImage[j][i] = RGBAPixel.getFillValue();
+                    }
+                }
+            }
+        } else {
+            return image;
+        }
+        return newImage;
     }
 
     /**
@@ -298,8 +341,14 @@ public class Transform {
                 newImage[i][j] = convertedImage[i / amount][j];
             }
         }
+        RGBAPixel[][] expandedImage = new RGBAPixel[convertedImage.length][cols];
+        for (int i = 0; i < convertedImage.length; i++) {
+            for (int j = 0; j < cols; j++) {
+                expandedImage[i][j] = newImage[(rows - convertedImage.length) / 2 + i][j];
+            }
+        }
 
-        return convert(newImage);
+        return convert(expandedImage);
     }
 
     /**
@@ -332,8 +381,14 @@ public class Transform {
                 newImage[i][j] = convertedImage[i][j / amount];
             }
         }
+        RGBAPixel[][] expandedImage = new RGBAPixel[rows][convertedImage[0].length];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < convertedImage[0].length; j++) {
+                expandedImage[i][j] = newImage[i][(cols - convertedImage[0].length) / 2 + j];
+            }
+        }
 
-        return convert(newImage);
+        return convert(expandedImage);
     }
 
     /**
@@ -346,10 +401,14 @@ public class Transform {
         int rows = originalImage.length;
         int cols = originalImage[0].length;
         RGBAPixel[][] newImage = new RGBAPixel[rows][cols];
-        for (int i = 0; i < originalImage.length; i++) {
-            for (int j = 0; j < originalImage[i].length; j++) {
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
                 RGBAPixel pixel = originalImage[i][j];
-                newImage[i][j] = new RGBAPixel(pixel.setGreen(RGBAPixel.getFillValue().getGreen()));
+                if (pixel.getGreen() != 0) {
+                    newImage[i][j] = RGBAPixel.getFillValue();
+                } else {
+                    newImage[i][j] = pixel;
+                }
             }
         }
         return newImage;
