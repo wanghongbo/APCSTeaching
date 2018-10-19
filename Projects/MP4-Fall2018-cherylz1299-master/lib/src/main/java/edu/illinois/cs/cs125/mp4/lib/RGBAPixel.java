@@ -18,6 +18,7 @@ import java.util.Objects;
  */
 @SuppressWarnings("NumericOverflow")
 public class RGBAPixel {
+    /** RGBA red shift value. */
     private static final int RED_SHIFT = 0;
 
     /** RGBA green shift value. */
