@@ -124,7 +124,7 @@ public final class MainActivity extends AppCompatActivity {
         setBonIverBackground.setOnClickListener(v -> {
             Log.d(TAG, "Set Bon Iver background button click");
             backgroundBitmap = backgroundImages.get(R.drawable.boniver_background);
-            setForegroundBitmap(backgroundBitmap);
+            setForegroundBitmap(foregroundBitmap);
         });
         final ImageButton setCornfieldBackground = findViewById(R.id.background_cornfield);
         setCornfieldBackground.setOnClickListener(v -> {

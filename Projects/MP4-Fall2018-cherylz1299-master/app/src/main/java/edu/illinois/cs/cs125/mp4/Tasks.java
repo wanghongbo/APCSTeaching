@@ -17,8 +17,7 @@ import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.lang.ref.WeakReference;
 
-import edu.illinois.cs.cs125.mp4.lib.RGBAPixel;
-import edu.illinois.cs.cs125.mp4.lib.Transform;
+import edu.illinois.cs.cs125.mp4.lib.*;
 
 import static android.graphics.Bitmap.Config.ARGB_8888;
 
@@ -235,6 +234,12 @@ class Tasks {
                     break;
                 case "rotateRight":
                     pixels = Transform.rotateRight(pixels);
+                    break;
+                case "flipVertical":
+                    pixels = Transform.flipVertical(pixels);
+                    break;
+                case "flipHorizontal":
+                    pixels = Transform.flipHorizontal(pixels);
                     break;
                 case "expand":
                     pixels = Transform.expandVertical(pixels, MainActivity.DEFAULT_SCALE_FACTOR);
