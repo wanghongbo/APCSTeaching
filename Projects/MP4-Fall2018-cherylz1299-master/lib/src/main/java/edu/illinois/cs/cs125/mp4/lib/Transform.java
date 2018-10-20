@@ -162,7 +162,32 @@ public class Transform {
      * @return the rotated image
      */
     public static RGBAPixel[][] rotateLeft(final RGBAPixel[][] originalImage) {
-        return rotate(originalImage, Direction.LEFT);
+        //Old method.
+        //return rotate(originalImage, Direction.LEFT);
+
+        //New method.
+        int rows = originalImage.length;
+        int cols = originalImage[0].length;
+        RGBAPixel[][] newImage = new RGBAPixel[rows][cols];
+
+        double centerX = (rows - 1) / 2.0;
+        double centerY = (cols - 1) / 2.0;
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                int x = (int) (j - centerY + centerX);
+                int y = (int) (centerX - i + centerY);
+                if (x < 0 || x > rows - 1 || y < 0 || y > cols - 1) {
+                    newImage[i][j] = RGBAPixel.getFillValue();
+                } else {
+                    int originI = (int) (centerX + centerY - j);
+                    int originJ = (int) (i + centerY - centerX);
+                    newImage[i][j] = originalImage[originI][originJ];
+                }
+            }
+        }
+
+        return newImage;
     }
 
     /**
@@ -172,7 +197,32 @@ public class Transform {
      * @return the rotated image
      */
     public static RGBAPixel[][] rotateRight(final RGBAPixel[][] originalImage) {
-        return rotate(originalImage, Direction.RIGHT);
+        //Old method.
+        //return rotate(originalImage, Direction.RIGHT);
+
+        //New method.
+        int rows = originalImage.length;
+        int cols = originalImage[0].length;
+        RGBAPixel[][] newImage = new RGBAPixel[rows][cols];
+
+        double centerX = (rows - 1) / 2.0;
+        double centerY = (cols - 1) / 2.0;
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                int x = (int) (centerY - j + centerX);
+                int y = (int) (i - centerX + centerY);
+                if (x < 0 || x > rows - 1 || y < 0 || y > cols - 1) {
+                    newImage[i][j] = RGBAPixel.getFillValue();
+                } else {
+                    int originI = (int) (j + centerX - centerY);
+                    int originJ = (int) (centerY + centerX - i);
+                    newImage[i][j] = originalImage[originI][originJ];
+                }
+            }
+        }
+
+        return newImage;
     }
 
     /**
