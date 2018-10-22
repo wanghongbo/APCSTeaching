@@ -238,7 +238,7 @@ public final class MainActivity extends AppCompatActivity {
         /*
          * Start off with buttons disabled and enable them once the user loads an image.
          */
-//        enableOrDisableButtons(false);
+        enableOrDisableButtons(false);
 
         /*
          * Configure the progress bar.
@@ -550,6 +550,8 @@ public final class MainActivity extends AppCompatActivity {
             Canvas foregroundCanvas = new Canvas(newForegroundBitmap);
             foregroundCanvas.drawBitmap(scaledForegroundBitmap, foregroundCenterWidth, foregroundCenterHeight, null);
             foregroundBitmap = newForegroundBitmap;
+
+            enableOrDisableButtons(true);
         } else {
             foregroundBitmap = null;
         }
@@ -596,9 +598,9 @@ public final class MainActivity extends AppCompatActivity {
      */
     private void enableOrDisableButtons(final boolean enableOrDisable) {
         Log.d(TAG, "enableOrDisable " + enableOrDisable);
-        for (int viewID : new int[] {R.id.shiftDown, R.id.shiftDown, R.id.rotateLeft, R.id.rotateRight,
+        for (int viewID : new int[] {R.id.shiftUp, R.id.shiftDown, R.id.shiftDown, R.id.rotateLeft, R.id.rotateRight,
             R.id.shiftLeft, R.id.shiftRight, R.id.expand, R.id.greenScreen, R.id.shrink,
-            R.id.flipVertical, R.id.flipHorizontal}) {
+            R.id.flipVertical, R.id.flipHorizontal, R.id.save}) {
             final ImageButton button = findViewById(viewID);
             button.setClickable(enableOrDisable);
             button.setEnabled(enableOrDisable);
