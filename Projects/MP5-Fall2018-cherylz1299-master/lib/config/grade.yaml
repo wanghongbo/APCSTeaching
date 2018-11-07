@@ -1,0 +1,133 @@
+name: "MP5"
+semester: "Fall2018"
+version: 1.0.0
+package: "edu.illinois.cs.cs125.mp5.lib"
+grading:
+  timeout: PT5M
+  run: "./gradlew lib:grade -c settings.gradle.grade -Pgrade.capture -Pgrade.secure -Pgrade.reporting.file={{ gradeFile }}"
+  ignoreOutput:
+    - "^java.security.policy: error parsing file.*"
+    - "^Unable to initialize policy entry:.*"
+    - "^.*?expected \\[\\;\\], found \\[priority\\]$"
+    - "^WARNING: An illegal reflective access operation has occurred.*"
+    - "^WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass.*"
+    - "^WARNING: Please consider reporting this to the maintainers.*"
+    - "^WARNING: Use --illegal-access=warn to enable warnings.*"
+    - "^WARNING: All illegal access operations will be denied in a future release.*"
+    - "^The TaskInternal.*"
+scoring:
+  max: 100
+  selectors:
+    - checkstyle
+    - test
+forceCommitAfterPoints: true
+vcs:
+  git: true
+students:
+  location: email.txt
+  require: true
+  count: 1
+  suffix: "@illinois.edu"
+files:
+  - compile:
+    - BondedAtom.java
+    - ChemicalElement.java
+    - CyclicOrganicMoleculeBuilder.java
+    - LinearOrganicMoleculeBuilder.java
+    - MoleculeAnalyzer.java
+    - OrganicMoleculeBuilder.java
+    - NamingConstants.java
+    test: MoleculeAnalyzer
+secure: config/security.policy
+reporting:
+  post: "https://cs125-reporting.cs.illinois.edu/progress"
+notes:
+  "Note that the maximum local grade (including extra credit) is 100/100.
+  10 points will be provided during official grading if you have pushed
+  code that earns at least 40 points by Monday, November 12 at 5PM."
+checkstyle:
+  name: "checkstyle Tests"
+  missing:
+    score: 0
+    message: "checkstyle failed to run"
+    name: "checkstyle"
+  selectors:
+    - selector: "count(//file/error) = 0"
+      score: 10
+      message: "No checkstyle errors were reported"
+      name: "checkstyle"
+    - selector: "count(//file/error) > 0"
+      score: 0
+      message: "checkstyle errors were reported"
+      name: "checkstyle"
+test:
+  name: "testNG Tests"
+  selectors:
+    - selector: "count(//testsuite[@name='edu.illinois.cs.cs125.mp5.lib.MoleculeAnalyzerTest']) = 0"
+      score: 0
+      message: "MoleculeAnalyzerTest didn't compile"
+      name: "MoleculeAnalyzerTest"
+    - selector: "count(//testcase[@name='testMolecularWeight']) = 1 and count(//testcase[@name='testMolecularWeight']//failure) = 0"
+      score: 10
+      message: "testMolecularWeight succeeded"
+      name: "Analysis: weight"
+    - selector: "count(//testcase[@name='testMolecularWeight']) = 1 and count(//testcase[@name='testMolecularWeight']//failure) > 0"
+      score: 0
+      message: "testMolecularWeight failed"
+      name: "Analysis: weight"
+    - selector: "count(//testcase[@name='testHasCharged']) = 1 and count(//testcase[@name='testHasCharged']//failure) = 0"
+      score: 10
+      message: "testHasCharged succeeded"
+      name: "Analysis: charge"
+    - selector: "count(//testcase[@name='testHasCharged']) = 1 and count(//testcase[@name='testHasCharged']//failure) > 0"
+      score: 0
+      message: "testHasCharged failed"
+      name: "Analysis: charge"
+    - selector: "count(//testcase[@name='testNamingSimpleCyclic']) = 1 and count(//testcase[@name='testNamingSimpleCyclic']//failure) = 0"
+      score: 20
+      message: "testNamingSimpleCyclic succeeded"
+      name: "Simple cycle"
+    - selector: "count(//testcase[@name='testNamingSimpleCyclic']) = 1 and count(//testcase[@name='testNamingSimpleCyclic']//failure) > 0"
+      score: 0
+      message: "testNamingSimpleCyclic failed"
+      name: "Simple cycle"
+    - selector: "count(//testcase[@name='testNamingSimpleStraight']) = 1 and count(//testcase[@name='testNamingSimpleStraight']//failure) = 0"
+      score: 20
+      message: "testNamingSimpleStraight succeeded"
+      name: "Straight chain"
+    - selector: "count(//testcase[@name='testNamingSimpleStraight']) = 1 and count(//testcase[@name='testNamingSimpleStraight']//failure) > 0"
+      score: 0
+      message: "testNamingSimpleStraight failed"
+      name: "Straight chain"
+    - selector: "count(//testcase[@name='testNamingOneSubstituentCyclic']) = 1 and count(//testcase[@name='testNamingOneSubstituentCyclic']//failure) = 0"
+      score: 10
+      message: "testNamingOneSubstituentCyclic succeeded"
+      name: "One-sub cycle"
+    - selector: "count(//testcase[@name='testNamingOneSubstituentCyclic']) = 1 and count(//testcase[@name='testNamingOneSubstituentCyclic']//failure) > 0"
+      score: 0
+      message: "testNamingOneSubstituentCyclic failed"
+      name: "One-sub cycle"
+    - selector: "count(//testcase[@name='testNamingOneSubstituentLinear']) = 1 and count(//testcase[@name='testNamingOneSubstituentLinear']//failure) = 0"
+      score: 10
+      message: "testNamingOneSubstituentLinear succeeded"
+      name: "One-sub linear"
+    - selector: "count(//testcase[@name='testNamingOneSubstituentLinear']) = 1 and count(//testcase[@name='testNamingOneSubstituentLinear']//failure) > 0"
+      score: 0
+      message: "testNamingOneSubstituentLinear failed"
+      name: "One-sub linear"
+    - selector: "count(//testcase[@name='testNamingMultipleSubstituents']) = 1 and count(//testcase[@name='testNamingMultipleSubstituents']//failure) = 0"
+      score: 5
+      message: "testNamingMultipleSubstituents succeeded"
+      name: "Multiple/mixed subs"
+    - selector: "count(//testcase[@name='testNamingMultipleSubstituents']) = 1 and count(//testcase[@name='testNamingMultipleSubstituents']//failure) > 0"
+      score: 0
+      message: "testNamingMultipleSubstituents failed"
+      name: "Multiple/mixed subs"
+    - selector: "count(//testcase[@name='testNamingPriority']) = 1 and count(//testcase[@name='testNamingPriority']//failure) = 0"
+      score: 5
+      message: "testNamingPriority succeeded"
+      name: "Priority tiebreak"
+    - selector: "count(//testcase[@name='testNamingPriority']) = 1 and count(//testcase[@name='testNamingPriority']//failure) > 0"
+      score: 0
+      message: "testNamingPriority failed"
+      name: "Priority tiebreak"
