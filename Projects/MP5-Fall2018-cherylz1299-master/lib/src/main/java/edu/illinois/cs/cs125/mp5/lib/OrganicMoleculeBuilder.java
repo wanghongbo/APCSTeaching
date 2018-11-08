@@ -223,7 +223,7 @@ public abstract class OrganicMoleculeBuilder {
          */
         public BondedAtom attach(final BondedAtom coreCarbon) {
             switch (type) {
-                case ALKANE:
+                case ALKANE:    //甲基取代基
                     BondedAtom[] carbons = new BondedAtom[alkylLength];
                     BondedAtom[][] carbonAttachments =
                         new BondedAtom[alkylLength][ChemicalElement.CARBON.getValence()];
@@ -249,7 +249,7 @@ public abstract class OrganicMoleculeBuilder {
                         }
                     }
                     return carbons[0];
-                case ALCOHOL:
+                case ALCOHOL:   //醇取代基
                     BondedAtom[] oBonds = new BondedAtom[alcoholProtons + 1];
                     oBonds[0] = coreCarbon;
                     int[] oBondCounts = new int[alcoholProtons + 1];
@@ -261,10 +261,10 @@ public abstract class OrganicMoleculeBuilder {
                         oBonds[i + 1] = hydrogen;
                     }
                     return oxygen;
-                case CARBONYL:
+                case CARBONYL:  //酮取代基
                     return new BondedAtom(ChemicalElement.OXYGEN,
                         new BondedAtom[]{coreCarbon}, new int[]{2});
-                case HALOGEN:
+                case HALOGEN:   //卤素取代基
                     return new BondedAtom(halogen, new BondedAtom[]{coreCarbon}, new int[]{1});
                 default:
                     return null; // Shouldn't happen
@@ -337,6 +337,7 @@ public abstract class OrganicMoleculeBuilder {
          * Creates an (optionally charged) alcohol substituent.
          *
          * @param protonation The number of protons on the O, from zero to two.
+         *                    这里的proton指的就是氢原子
          * @return The new substituent.
          */
         public static Substituent createAlcohol(final int protonation) {
@@ -365,18 +366,22 @@ public abstract class OrganicMoleculeBuilder {
     public enum SubstituentType {
         /**
          * A single-bonded chain of carbons.
+         * 甲基取代基
          */
         ALKANE,
         /**
          * A halogen.
+         * 卤素取代基
          */
         HALOGEN,
         /**
          * An alcohol (-OH group).
+         * 醇取代基
          */
         ALCOHOL,
         /**
          * A carbonyl (=O group).
+         * 酮取代基
          */
         CARBONYL
     }
