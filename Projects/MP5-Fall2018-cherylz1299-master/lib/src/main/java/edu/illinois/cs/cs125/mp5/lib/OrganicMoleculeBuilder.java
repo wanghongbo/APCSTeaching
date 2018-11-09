@@ -109,9 +109,11 @@ public abstract class OrganicMoleculeBuilder {
                 valenceFilled += s.getValenceConsumed();
             }
             int neededHydrogens = freeValence(i) - valenceFilled;
+            // 考虑两个碳之间有两个链连接的情况？
             if (i < coreCarbons - 1) {
                 neededHydrogens = neededHydrogens - bondCounts[i] + 1;
             }
+            // totalLinks表示这个碳元素相邻的元素（或者取代基）数量
             int totalLinks = ChemicalElement.CARBON.getValence()
                 - (valenceFilled - presentSubs.length);
             int[] bondNumbers = new int[totalLinks];
@@ -127,6 +129,7 @@ public abstract class OrganicMoleculeBuilder {
                 bondNumbers[1] = bondCounts[i];
                 backboneBonds[i][1] = placeholder; // So it doesn't get filled by a hydrogen
             }
+            // 链接氢元素和取代基
             int hydridesAdded = 0;
             int substituentsConnected = 0;
             for (int s = 0; s < totalLinks; s++) {
@@ -174,7 +177,7 @@ public abstract class OrganicMoleculeBuilder {
 
     /**
      * Gets how many bonds of the given carbon are not satisfied in the backbone.
-     *
+     * 碳元素链接到主干后，还剩几个链位置（不考虑链接取代基和氢元素的情况）
      * @param position The zero-based index of the carbon.
      * @return How many bonds the given carbon has yet to make.
      */
@@ -337,7 +340,7 @@ public abstract class OrganicMoleculeBuilder {
          * Creates an (optionally charged) alcohol substituent.
          *
          * @param protonation The number of protons on the O, from zero to two.
-         *                    这里的proton指的就是氢原子
+         *                    这里的proton指的就是氢原子.
          * @return The new substituent.
          */
         public static Substituent createAlcohol(final int protonation) {
@@ -366,22 +369,22 @@ public abstract class OrganicMoleculeBuilder {
     public enum SubstituentType {
         /**
          * A single-bonded chain of carbons.
-         * 甲基取代基
+         * 甲基取代基.
          */
         ALKANE,
         /**
          * A halogen.
-         * 卤素取代基
+         * 卤素取代基.
          */
         HALOGEN,
         /**
          * An alcohol (-OH group).
-         * 醇取代基
+         * 醇取代基.
          */
         ALCOHOL,
         /**
          * A carbonyl (=O group).
-         * 酮取代基
+         * 酮取代基.
          */
         CARBONYL
     }

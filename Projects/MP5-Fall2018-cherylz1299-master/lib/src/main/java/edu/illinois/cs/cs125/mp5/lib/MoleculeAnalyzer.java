@@ -30,6 +30,53 @@ public class MoleculeAnalyzer {
      * @param molecule an atom belonging to the molecule that will be analyzed.
      */
     public MoleculeAnalyzer(final BondedAtom molecule) {
+        this.allAtoms = findAllAtoms(molecule, new ArrayList<BondedAtom>());
+    }
+
+    /**
+     * Recursively adds connected atoms to the allAtoms list.
+     * @param current The atom we're currently examining
+     * @param atoms List of all atoms we've found so far
+     * @return All atoms found in the molecule
+     */
+    public ArrayList<BondedAtom> findAllAtoms(BondedAtom current, ArrayList<BondedAtom> atoms) {
+        if (atoms.contains(current)) {
+            return atoms;
+        } else {
+            atoms.add(current);
+            for (BondedAtom neighbor: current) {
+                atoms.add(find(atoms, neighbor));
+            }
+            return atoms;
+        }
+    }
+
+    /**
+     * Get the weight of this molecular.
+     * @return The molecular weight of the molecule in grams per mole
+     */
+    public double getMolecularWeight() {
+        double weight = 0.0;
+        for (BondedAtom atom: this.allAtoms) {
+            weight += atom.getElement().getWeight();
+        }
+        return weight;
+    }
+
+    /**
+     * Determines whether this molecule contains any charged atoms.
+     * @return True if there is at least one charged atom in the molecule, false otherwise
+     */
+    public boolean hasChargedAtoms() {
+        
+    }
+
+    public List<BondedAtom> findPath​(BondedAtom start, BondedAtom end) {
+
+    }
+
+    private List<BondedAtom> findPath​(BondedAtom current, BondedAtom end, List<BondedAtom> path) {
+
     }
 
     /*
