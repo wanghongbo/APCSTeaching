@@ -123,7 +123,7 @@ public abstract class OrganicMoleculeBuilder {
                 backboneBonds[i], bondNumbers);
             if (i > 0) {
                 bondNumbers[0] = bondCounts[i - 1];
-                // 主干上上的碳元素总是在第一个相邻位置
+                // 主干上的碳元素总是在第一个相邻位置
                 backboneBonds[i][0] = backboneCarbons[i - 1];
             }
             if (i < coreCarbons - 1) {
@@ -149,6 +149,7 @@ public abstract class OrganicMoleculeBuilder {
             }
         }
         for (int i = 0; i < coreCarbons - 1; i++) {
+            // 为什么不放到上面的for循环中？
             backboneBonds[i][1] = backboneCarbons[i + 1];
         }
         finishBackbone(backboneCarbons[0], backboneBonds[0],
