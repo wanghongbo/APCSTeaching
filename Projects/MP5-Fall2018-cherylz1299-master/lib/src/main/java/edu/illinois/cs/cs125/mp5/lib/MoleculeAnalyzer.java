@@ -35,29 +35,31 @@ public class MoleculeAnalyzer {
 
     /**
      * Recursively adds connected atoms to the allAtoms list.
-     * @param current The atom we're currently examining
-     * @param atoms List of all atoms we've found so far
+     *
+     * @param current      The atom we're currently examining
+     * @param visitedAtoms List of all atoms we've found so far
      * @return All atoms found in the molecule
      */
-    public ArrayList<BondedAtom> findAllAtoms(BondedAtom current, ArrayList<BondedAtom> atoms) {
-        if (atoms.contains(current)) {
-            return atoms;
+    public ArrayList<BondedAtom> findAllAtoms(BondedAtom current, ArrayList<BondedAtom> visitedAtoms) {
+        if (visitedAtoms.contains(current)) {
+            return visitedAtoms;
         } else {
-            atoms.add(current);
-            for (BondedAtom neighbor: current) {
-                atoms.add(find(atoms, neighbor));
+            visitedAtoms.add(current);
+            for (BondedAtom neighbor : current) {
+                visitedAtoms.addAll(findAllAtoms(neighbor, visitedAtoms));
             }
-            return atoms;
+            return visitedAtoms;
         }
     }
 
     /**
      * Get the weight of this molecular.
+     *
      * @return The molecular weight of the molecule in grams per mole
      */
     public double getMolecularWeight() {
         double weight = 0.0;
-        for (BondedAtom atom: this.allAtoms) {
+        for (BondedAtom atom : this.allAtoms) {
             weight += atom.getElement().getWeight();
         }
         return weight;
@@ -65,18 +67,260 @@ public class MoleculeAnalyzer {
 
     /**
      * Determines whether this molecule contains any charged atoms.
+     *
      * @return True if there is at least one charged atom in the molecule, false otherwise
      */
     public boolean hasChargedAtoms() {
-        
+        for (BondedAtom atom : this.allAtoms) {
+            int valence = atom.getElement().getValence();
+            int bondsCount = 0;
+            for (BondedAtom.BondInfo bondInfo : atom.getBondInfo()) {
+                bondsCount += bondInfo.getCount();
+            }
+            if (valence != bondsCount) {
+                return true;
+            }
+        }
+        return false;
     }
 
+    /**
+     * Returns whether the molecule is a ring.
+     *
+     * @return True if the molecule is a ring and false otherwise
+     */
+    public boolean isRing() {
+        if (this.allAtoms.size() == 0) {
+            return false;
+        }
+        BondedAtom firstAtom = this.allAtoms.get(0);
+        ArrayList<BondedAtom> visitedAtoms = new ArrayList<>();
+        for (BondedAtom neighbor : firstAtom) {
+            visitedAtoms.add(firstAtom);
+            return searchRing(neighbor, firstAtom, visitedAtoms);
+        }
+        return false;
+    }
+
+    /**
+     * Returns whether the molecule is a ring.
+     *
+     * @param currentAtom  The current searching atom.
+     * @param parentAtom   The parent atom of the current atom.
+     * @param visitedAtoms The list of atom which has been visited.
+     * @return True if the molecule is a ring and false otherwise
+     */
+    private boolean searchRing(BondedAtom currentAtom, BondedAtom parentAtom, ArrayList<BondedAtom> visitedAtoms) {
+        visitedAtoms.add(currentAtom);
+        for (BondedAtom neighbor : currentAtom) {
+            if (!visitedAtoms.contains(neighbor)) {
+                return searchRing(neighbor, currentAtom, visitedAtoms);
+            } else if (neighbor != parentAtom) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Searches the molecule for a ring.
+     *
+     * @return A list containing the atoms in the ring if a ring exists, null otherwise
+     */
+    public java.util.List<BondedAtom> getRing() {
+        if (this.allAtoms.size() < 0) {
+            return null;
+        } else {
+            BondedAtom current = this.allAtoms.get(0);
+            return this.getRing​(current, new ArrayList<>());
+        }
+    }
+
+    /**
+     * Search the molecule for a ring from a specific starting point.
+     *
+     * @param current The current atom we are examining.
+     * @param visited A list of previously-visited atom. The previous atom is the last in the list.
+     * @return A list containing the atoms in the ring if a ring exists, null otherwise
+     */
+    public java.util.List<BondedAtom> getRing​(BondedAtom current, java.util.List<BondedAtom> visited) {
+        ringAtoms = new ArrayList<>();
+        int size = visited.size();
+        if (size == 0) {
+            visited.add(current);
+            for (BondedAtom neighbor : current) {
+                searchRingAtoms(neighbor, current, visited);
+            }
+        } else {
+            searchRingAtoms(current, visited.get(size - 1), visited);
+        }
+        return this.ringAtoms;
+    }
+
+    /**
+     * Store the atoms in ring when execute searchRingAtoms function;
+     */
+    private List<BondedAtom> ringAtoms = new ArrayList<>();
+
+    /**
+     * Return all the atoms in the ring.
+     *
+     * @param currentAtom  The current searching atom.
+     * @param parentAtom   The parent atom of the current atom.
+     * @param visitedAtoms The list of atom which has been visited.
+     * @return All the atoms in the ring.
+     */
+    private void searchRingAtoms(BondedAtom currentAtom, BondedAtom parentAtom, List<BondedAtom> visitedAtoms) {
+        visitedAtoms.add(currentAtom);
+        for (BondedAtom neighbor : currentAtom) {
+            if (!visitedAtoms.contains(neighbor)) {
+                searchRingAtoms(neighbor, currentAtom, visitedAtoms);
+            } else if (neighbor != parentAtom) {
+                boolean flag = false;
+                for (BondedAtom atom : visitedAtoms) {
+                    if (atom == parentAtom) {
+                        flag = true;
+                    }
+                    if (flag) {
+                        ringAtoms.add(atom);
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Identify the linear backbone of the molecule.
+     *
+     * @return The list of atoms constituting the linear backbone of this atom
+     */
+    public java.util.List<BondedAtom> getLinearBackbone() {
+        List<List<BondedAtom>> backbones = this.getBackbones();
+        List<BondedAtom> maxSizeBackBone = backbones.get(0);
+        for (List<BondedAtom> backbone : backbones) {
+            if (backbone.size() > maxSizeBackBone.size()) {
+                maxSizeBackBone = backbone;
+            }
+        }
+        return maxSizeBackBone;
+    }
+
+    /**
+     * Find all atoms that are molecule tips: carbons that are bonded to at most one other carbon.
+     *
+     * @return A list of all BondedAtoms that are tips of this molecule, which may be empty if it is a simple ring.
+     */
+    public java.util.List<BondedAtom> getTips() {
+        List<BondedAtom> tips = new ArrayList<>();
+        for (BondedAtom atom : this.allAtoms) {
+            int carbonCount = 0;
+            for (BondedAtom neighbor : atom) {
+                if (neighbor.getElement() == ChemicalElement.CARBON) {
+                    carbonCount++;
+                }
+            }
+            if (carbonCount == 1) {
+                tips.add(atom);
+            }
+        }
+        return tips;
+    }
+
+    /**
+     * Find all possible backbones in a linear molecule.
+     *
+     * @return A list of all possible backbones, each itself a list of atoms
+     */
+    public java.util.List<java.util.List<BondedAtom>> getBackbones() {
+        List<BondedAtom> tips = this.getTips();
+        List<List<BondedAtom>> backbones = new ArrayList<>();
+        for (int i = 0; i < tips.size(); i++) {
+            for (int j = i + 1; j < tips.size(); j++) {
+                BondedAtom start = tips.get(i);
+                BondedAtom end = tips.get(j);
+                List<BondedAtom> path = findPath​(start, end);
+                backbones.add(path);
+            }
+        }
+        return backbones;
+    }
+
+    /**
+     * Find a path between two atoms in the molecule.
+     *
+     * @param start The atom to start from
+     * @param end   The atom to end at
+     * @return The path from the start atom to the end atom
+     */
     public List<BondedAtom> findPath​(BondedAtom start, BondedAtom end) {
-
+        return findPath​(start, end, new ArrayList<>());
     }
 
+    /**
+     * Recursively find a path between two atoms in the molecule.
+     *
+     * @param current The current atom we are examining
+     * @param end     The atom to end at
+     * @param path    The atoms we've already visited on our way to the current atom
+     * @return The path from the current atom to the end atom
+     */
     private List<BondedAtom> findPath​(BondedAtom current, BondedAtom end, List<BondedAtom> path) {
+        path.add(current);
+        for (BondedAtom neighbor : current) {
+            if (neighbor != end) {
+                return findPath​(neighbor, end, path);
+            } else {
+                return path;
+            }
+        }
+        return path;
+    }
 
+    /**
+     * Rotate a backbone ring into the correct position for naming.
+     *
+     * @param ring The backbone ring to rotate
+     * @return The backbone ring rotated into the correct position
+     */
+    public java.util.List<BondedAtom> rotateRing​(java.util.List<BondedAtom> ring) {
+        int priorityIndex = 0;
+        for (int i = 0; i < ring.size(); i++) {
+            BondedAtom neighbor = ring.get(i);
+            if (!ring.contains(neighbor)) {
+                BondedAtom priorityAtom = ring.get(priorityIndex);
+                //这是不在环上的取代基或者氢原子
+                if (priorityAtom == null) {
+                    priorityAtom = neighbor;
+                }
+                if (getSubstituentAtomPriority(neighbor) > getSubstituentAtomPriority(priorityAtom)) {
+                    priorityIndex = i;
+                }
+            }
+        }
+
+        List<BondedAtom> rotatedRing = new ArrayList<>();
+        int i = 0;
+        while (i < ring.size()) {
+            rotatedRing.set(i, ring.get((i + priorityIndex) % ring.size()));
+        }
+        return rotatedRing;
+    }
+
+    private int getSubstituentAtomPriority(BondedAtom atom) {
+        if (atom.getElement() == ChemicalElement.OXYGEN && atom.getBondInfo().size() == 1) {
+            return 5;
+        } else if (atom.getElement() == ChemicalElement.OXYGEN && atom.getBondInfo().size() == 2) {
+            return 4;
+        } else if (atom.getElement() == ChemicalElement.BROMINE) {
+            return 3;
+        } else if (atom.getElement() == ChemicalElement.CHLORINE) {
+            return 2;
+        } else if (atom.getElement() == ChemicalElement.FLUORINE) {
+            return 1;
+        } else if (atom.getElement() == ChemicalElement.HYDROGEN) {
+            return 0;
+        }
+        return -1;
     }
 
     /*
@@ -143,9 +387,9 @@ public class MoleculeAnalyzer {
      *
      * @param backboneLength The number of carbon allAtoms in the backbone.
      * @param cyclicBackbone Whether the backbone is cyclic.
-     * @param substituents A map of low-priority substituent names to the positions at which they appear.
-     *                     The lists must be sorted in ascending order. Cannot be null.
-     * @param suffixName The suffix of the molecule (e.g. "ol").
+     * @param substituents   A map of low-priority substituent names to the positions at which they appear.
+     *                       The lists must be sorted in ascending order. Cannot be null.
+     * @param suffixName     The suffix of the molecule (e.g. "ol").
      * @param suffixGroupPos The positions at which the suffix-affecting substituent type appears. Should be null if
      *                       there are no high-priority substituents or if the suffix is from an end group (aldehyde
      *                       or carboxylic acid).
@@ -172,7 +416,7 @@ public class MoleculeAnalyzer {
                 if (suffixMultiplicity.endsWith("a") && suffixName.startsWith("o")) {
                     // It's "tetrol", not "tetraol"
                     suffixMultiplicity = suffixMultiplicity.substring(0,
-                        suffixMultiplicity.length() - 1);
+                            suffixMultiplicity.length() - 1);
                 }
                 suffix = suffixMultiplicity + suffix;
             }
@@ -188,7 +432,7 @@ public class MoleculeAnalyzer {
         List<String> substituentNameFragments = new ArrayList<>();
         for (String s : substituentNames) {
             substituentNameFragments.add(locantString(substituents.get(s)) + "-"
-                + NamingConstants.MULTIPLICITY_NAMES[substituents.get(s).size() - 1] + s);
+                    + NamingConstants.MULTIPLICITY_NAMES[substituents.get(s).size() - 1] + s);
         }
         if (substituentNameFragments.size() > 0) {
             StringBuilder substituentsPart = new StringBuilder();
@@ -203,6 +447,7 @@ public class MoleculeAnalyzer {
 
     /**
      * Combines a set of locants into a comma-separated string.
+     *
      * @param locants The sorted list of locants.
      * @return The locants, comma-separated.
      */
@@ -218,13 +463,14 @@ public class MoleculeAnalyzer {
      * Gets a chemical formula for this molecule.
      * This function is optional and not tested by the test suite; it is only used by the app.
      * You may use any formula format that you like.
+     *
      * @return A chemical formula indicating the allAtoms the molecule contains.
      */
     public String getFormula() {
         ChemicalElement[] elements =
-            {ChemicalElement.CARBON, ChemicalElement.HYDROGEN,
-             ChemicalElement.BROMINE, ChemicalElement.CHLORINE,
-             ChemicalElement.FLUORINE,  ChemicalElement.OXYGEN};
+                {ChemicalElement.CARBON, ChemicalElement.HYDROGEN,
+                        ChemicalElement.BROMINE, ChemicalElement.CHLORINE,
+                        ChemicalElement.FLUORINE, ChemicalElement.OXYGEN};
         StringBuilder formula = new StringBuilder();
         for (ChemicalElement e : elements) {
             int count = 0;

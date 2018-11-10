@@ -123,6 +123,7 @@ public abstract class OrganicMoleculeBuilder {
                 backboneBonds[i], bondNumbers);
             if (i > 0) {
                 bondNumbers[0] = bondCounts[i - 1];
+                // 主干上上的碳元素总是在第一个相邻位置
                 backboneBonds[i][0] = backboneCarbons[i - 1];
             }
             if (i < coreCarbons - 1) {
