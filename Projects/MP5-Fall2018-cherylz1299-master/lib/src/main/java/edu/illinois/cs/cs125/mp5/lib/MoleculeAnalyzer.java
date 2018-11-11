@@ -248,7 +248,8 @@ public class MoleculeAnalyzer {
                 }
             }
         }
-        return sortLinearBackbone(maxSizeBackBone);
+        List<BondedAtom> sortedBackbone = sortLinearBackbone(maxSizeBackBone);
+        return sortedBackbone;
     }
 
     /**
@@ -276,17 +277,31 @@ public class MoleculeAnalyzer {
      * @return The Sorted backbone
      */
     private List<BondedAtom> sortLinearBackbone(final List<BondedAtom> linearBackbone) {
-        System.out.println("--------start-------------------------------- ");
+        int size = linearBackbone.size();
+        List<BondedAtom> originBackbone = (List<BondedAtom>) ((ArrayList<BondedAtom>) linearBackbone).clone();
+        List<BondedAtom> reverseBackbone = new ArrayList<>();
+        for (int i = size - 1; i >= 0; i--) {
+            reverseBackbone.add(originBackbone.get(i));
+        }
+        List<String> originPriorities = getRingPriorities(originBackbone);
+        List<String> reversePriorities = getRingPriorities(reverseBackbone);
+        if (comparePriorities(originPriorities, reversePriorities) > 0) {
+            return originBackbone;
+        } else {
+            return reverseBackbone;
+        }
+
+        /*
         int maxPriorityIndex = 0;
         String maxPriority = "";
         int size = linearBackbone.size();
         for (int i = 0; i < size; i++) {
             BondedAtom atom = linearBackbone.get(i);
-            /* Easy way.
-            if (atom.hasSubstituent(linearBackbone)) {
-                maxPriorityIndex = i;
-                break;
-            }*/
+//            Easy way.
+//            if (atom.hasSubstituent(linearBackbone)) {
+//                maxPriorityIndex = i;
+//                break;
+//            }
             String priority = getSubstituentPriority(atom, linearBackbone);
             if (priority.compareTo(maxPriority) > 0) {
                 maxPriorityIndex = i;
@@ -301,7 +316,7 @@ public class MoleculeAnalyzer {
             return sortedBackbone;
         } else {
             return linearBackbone;
-        }
+        }*/
     }
 
     /**
@@ -318,11 +333,6 @@ public class MoleculeAnalyzer {
                 BondedAtom neighbor = atom.getConnectedAtom(i);
                 if (!backbone.contains(neighbor)) {
                     int bondCount = atom.getBondInfo().get(i).getCount();
-                    if (neighbor.getElement() != ChemicalElement.HYDROGEN) {
-                        System.out.println("----neighbor: " + neighbor.getElement().toString());
-//                    System.out.println("----neighbor index: " + i);
-                        System.out.println("----bondCount: " + bondCount);
-                    }
                     String value = "";
                     if (neighbor.getElement() == ChemicalElement.OXYGEN && bondCount == 2) {
                         value = "7";
@@ -343,11 +353,6 @@ public class MoleculeAnalyzer {
             if (priority.equals("11")) {
                 priority = "5";
             }
-        }
-        if (!priority.equals("")) {
-            System.out.println("----priority: " + priority);
-        } else {
-            System.out.println("\"\"");
         }
         return priority;
     }
@@ -478,11 +483,6 @@ public class MoleculeAnalyzer {
             }
             count++;
         }
-        System.out.println("********");
-        for (BondedAtom atom: maxRing) {
-            System.out.println("********" + getSubstituentPriority(atom, maxRing));
-        }
-
         return maxRing;
     }
 
@@ -510,7 +510,7 @@ public class MoleculeAnalyzer {
     private int comparePriorities(final List<String> priorities1, final List<String> priorities2) {
         List<String> highPriorities1 = new ArrayList<>();
         for (String priority: priorities1) {
-            if (priority.equals("66") || priority.equals("6")) {
+            if (priority.equals("66") || priority.equals("6") || priority.equals("7")) {
                 highPriorities1.add(priority);
             } else {
                 highPriorities1.add("");
@@ -518,7 +518,7 @@ public class MoleculeAnalyzer {
         }
         List<String> highPriorities2 = new ArrayList<>();
         for (String priority: priorities2) {
-            if (priority.equals("66") || priority.equals("6")) {
+            if (priority.equals("66") || priority.equals("6") || priority.equals("7")) {
                 highPriorities2.add(priority);
             } else {
                 highPriorities2.add("");
