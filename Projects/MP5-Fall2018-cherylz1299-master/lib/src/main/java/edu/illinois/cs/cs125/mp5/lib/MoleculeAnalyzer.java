@@ -478,7 +478,7 @@ public class MoleculeAnalyzer {
             }
             count++;
         }
-
+        System.out.println("********");
         for (BondedAtom atom: maxRing) {
             System.out.println("********" + getSubstituentPriority(atom, maxRing));
         }
@@ -508,7 +508,34 @@ public class MoleculeAnalyzer {
      * @return 1: first > second, -1: first < second, 0: first == second
      */
     private int comparePriorities(final List<String> priorities1, final List<String> priorities2) {
+        List<String> highPriorities1 = new ArrayList<>();
+        for (String priority: priorities1) {
+            if (priority.equals("66") || priority.equals("6")) {
+                highPriorities1.add(priority);
+            } else {
+                highPriorities1.add("");
+            }
+        }
+        List<String> highPriorities2 = new ArrayList<>();
+        for (String priority: priorities2) {
+            if (priority.equals("66") || priority.equals("6")) {
+                highPriorities2.add(priority);
+            } else {
+                highPriorities2.add("");
+            }
+        }
         int i = 0;
+        while (i < highPriorities1.size() && i < highPriorities2.size()) {
+            if (highPriorities1.get(i).compareTo(highPriorities2.get(i)) > 0) {
+                return 1;
+            } else if (highPriorities1.get(i).compareTo(highPriorities2.get(i)) < 0) {
+                return -1;
+            } else {
+                i++;
+            }
+        }
+
+        i = 0;
         while (i < priorities1.size() && i < priorities2.size()) {
             if (priorities1.get(i).compareTo(priorities2.get(i)) > 0) {
                 return 1;
@@ -519,52 +546,6 @@ public class MoleculeAnalyzer {
             }
         }
         return 0;
-    }
-
-    /**
-     * Check if list is ordered.
-     *
-     * @param list The list to be checked
-     * @return -1: not ordered, 0: desc ordered, 1: asc ordered
-     */
-    private int checkOrdered(final List<String> list) {
-        int start = 0;
-        int end = list.size() - 1;
-        while (start < list.size() && list.get(start).isEmpty()) {
-            start++;
-        }
-        while (end >= 0 && list.get(end).isEmpty()) {
-            end--;
-        }
-        if (end > start) {
-            for (int i = start; i < end; i++) {
-                if (list.get(i).isEmpty()) {
-                    list.remove(i);
-                    end--;
-                }
-            }
-        }
-        boolean desc = true;
-        for (int i = 0; i < list.size() - 1; i++) {
-            if (list.get(i).compareTo(list.get(i + 1)) < 0) {
-                desc = false;
-                break;
-            }
-        }
-        boolean asc = true;
-        for (int i = 0; i < list.size() - 1; i++) {
-            if (list.get(i).compareTo(list.get(i + 1)) > 0) {
-                asc = false;
-                break;
-            }
-        }
-        if (desc) {
-            return 0;
-        } else if (asc) {
-            return 1;
-        } else {
-            return -1;
-        }
     }
 
     /**
