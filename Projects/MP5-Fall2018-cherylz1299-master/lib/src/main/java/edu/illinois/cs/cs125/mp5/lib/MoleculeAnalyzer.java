@@ -129,57 +129,6 @@ public class MoleculeAnalyzer {
     }
 
     /**
-     * Searches the molecule for a ring.
-     *
-     * @return A list containing the atoms in the ring if a ring exists, null otherwise
-     */
-    public java.util.List<BondedAtom> getRing() {
-        if (this.allAtoms.size() == 0 || !this.isRing()) {
-            return null;
-        } else {
-            BondedAtom current = this.allAtoms.get(0);
-            return this.getRing(current, new ArrayList<>());
-        }
-    }
-
-    /**
-     * Store the parent atom of i atom.
-     */
-    private Map<BondedAtom, BondedAtom> parentsMap = new HashMap<>();
-
-    /**
-     * Store the atoms in ring when execute searchRingAtoms function.
-     */
-    private List<BondedAtom> ringAtoms = new ArrayList<>();
-
-    /**
-     * Search the molecule for a ring from a specific starting point.
-     *
-     * @param current The current atom we are examining.
-     * @param visited A list of previously-visited atom. The previous atom is the last in the list.
-     * @return A list containing the atoms in the ring if a ring exists, null otherwise
-     */
-    public java.util.List<BondedAtom> getRing(final BondedAtom current, final java.util.List<BondedAtom> visited) {
-        visited.add(current);
-        for (BondedAtom neighbor : current) {
-            if (!visited.contains(neighbor)) {
-                parentsMap.put(neighbor, current);
-                getRing(neighbor, visited);
-            } else if (parentsMap.get(current) != null && parentsMap.get(current) != neighbor) {
-                ringAtoms = new ArrayList<>();
-                ringAtoms.add(current);
-                BondedAtom parentAtom = parentsMap.get(current);
-                while (parentAtom != neighbor) {
-                    ringAtoms.add(parentAtom);
-                    parentAtom = parentsMap.get(parentAtom);
-                }
-                ringAtoms.add(neighbor);
-            }
-        }
-        return ringAtoms;
-    }
-
-    /**
      * Find all atoms that are molecule tips: carbons that are bonded to at most one other carbon.
      *
      * @return A list of all BondedAtoms that are tips of this molecule, which may be empty if it is a simple ring.
@@ -279,6 +228,7 @@ public class MoleculeAnalyzer {
      * @return The list of atoms constituting the linear backbone of this atom
      */
     public java.util.List<BondedAtom> getLinearBackbone() {
+        /** Easy way.
         List<List<BondedAtom>> backbones = this.getBackbones();
         List<BondedAtom> maxSizeBackBone = backbones.get(0);
         for (List<BondedAtom> backbone : backbones) {
@@ -286,7 +236,37 @@ public class MoleculeAnalyzer {
                 maxSizeBackBone = backbone;
             }
         }
+        return sortLinearBackbone(maxSizeBackBone);**/
+
+        // All high-priority substituents must be attached to the backbone.
+        List<List<BondedAtom>> backbones = this.getBackbones();
+        List<BondedAtom> maxSizeBackBone = backbones.get(0);
+        for (List<BondedAtom> backbone : backbones) {
+            if (backbone.size() > maxSizeBackBone.size()) {
+                if (checkBackboneValid(backbone)) {
+                    maxSizeBackBone = backbone;
+                }
+            }
+        }
         return sortLinearBackbone(maxSizeBackBone);
+    }
+
+    /**
+     * Check if the backbone is valid.
+     * @param backbone The backbone to be checked
+     * @return True if the backbone is valid
+     */
+    public boolean checkBackboneValid(final List<BondedAtom> backbone) {
+        for (BondedAtom atom : this.allAtoms) {
+            if (!backbone.contains(atom)) {
+                for (BondedAtom neighbor : atom) {
+                    if (neighbor.getElement() == ChemicalElement.OXYGEN) {
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
     }
 
     /**
@@ -364,7 +344,7 @@ public class MoleculeAnalyzer {
         if (!priority.equals("")) {
             System.out.println("----priority: " + priority);
         } else {
-            System.out.println("_");
+            System.out.println("\"\"");
         }
         return priority;
     }
@@ -390,12 +370,64 @@ public class MoleculeAnalyzer {
     }
 
     /**
+     * Searches the molecule for a ring.
+     *
+     * @return A list containing the atoms in the ring if a ring exists, null otherwise
+     */
+    public java.util.List<BondedAtom> getRing() {
+        if (this.allAtoms.size() == 0 || !this.isRing()) {
+            return null;
+        } else {
+            BondedAtom current = this.allAtoms.get(0);
+            return this.getRing(current, new ArrayList<>());
+        }
+    }
+
+    /**
+     * Store the parent atom of i atom.
+     */
+    private Map<BondedAtom, BondedAtom> parentsMap = new HashMap<>();
+
+    /**
+     * Store the atoms in ring when execute searchRingAtoms function.
+     */
+    private List<BondedAtom> ringAtoms = new ArrayList<>();
+
+    /**
+     * Search the molecule for a ring from a specific starting point.
+     *
+     * @param current The current atom we are examining.
+     * @param visited A list of previously-visited atom. The previous atom is the last in the list.
+     * @return A list containing the atoms in the ring if a ring exists, null otherwise
+     */
+    public java.util.List<BondedAtom> getRing(final BondedAtom current, final java.util.List<BondedAtom> visited) {
+        visited.add(current);
+        for (BondedAtom neighbor : current) {
+            if (!visited.contains(neighbor)) {
+                parentsMap.put(neighbor, current);
+                getRing(neighbor, visited);
+            } else if (parentsMap.get(current) != null && parentsMap.get(current) != neighbor) {
+                ringAtoms = new ArrayList<>();
+                ringAtoms.add(current);
+                BondedAtom parentAtom = parentsMap.get(current);
+                while (parentAtom != neighbor) {
+                    ringAtoms.add(parentAtom);
+                    parentAtom = parentsMap.get(parentAtom);
+                }
+                ringAtoms.add(neighbor);
+            }
+        }
+        return ringAtoms;
+    }
+
+    /**
      * Rotate a backbone ring into the correct position for naming.
      *
      * @param ring The backbone ring to rotate
      * @return The backbone ring rotated into the correct position
      */
     public java.util.List<BondedAtom> rotateRing(final java.util.List<BondedAtom> ring) {
+        /** Easy way.
         int priorityIndex = 0;
         for (int i = 0; i < ring.size(); i++) {
             BondedAtom atom = ring.get(i);
@@ -411,7 +443,153 @@ public class MoleculeAnalyzer {
             sortedRing.add(ring.get(index));
             i++;
         }
-        return sortedRing;
+        return sortedRing;**/
+
+        int size = ring.size();
+        List<BondedAtom> sortedRing = (List<BondedAtom>) ((ArrayList<BondedAtom>) ring).clone();
+        List<BondedAtom> reverseSortedRing = new ArrayList<>();
+        for (int i = 0; i < size; i++) {
+            reverseSortedRing.add(sortedRing.get(size - i - 1));
+        }
+        List<String> priorities = getRingPriorities(sortedRing);
+        List<String> reversePriorities = getRingPriorities(reverseSortedRing);
+        List<String> maxPriorities = priorities;
+        List<BondedAtom> maxRing = sortedRing;
+        if (comparePriorities(reversePriorities, maxPriorities) > 0) {
+            maxPriorities = reversePriorities;
+            maxRing = reverseSortedRing;
+        }
+        int count = 1;
+        while (count < size) {
+            sortedRing = rotateRingOnce(sortedRing);
+            reverseSortedRing = rotateRingOnce(reverseSortedRing);
+            priorities = getRingPriorities(sortedRing);
+            reversePriorities = getRingPriorities(reverseSortedRing);
+            if (comparePriorities(priorities, maxPriorities) > 0) {
+                maxPriorities = priorities;
+                maxRing = sortedRing;
+            }
+            if (comparePriorities(reversePriorities, maxPriorities) > 0) {
+                maxPriorities = reversePriorities;
+                maxRing = reverseSortedRing;
+            }
+            count++;
+        }
+        return maxRing;
+
+        /*
+        int result = checkOrdered(priorities);
+        while (result == -1) {
+            sortedRing = rotateRingOnce(sortedRing);
+            priorities = getRingPriorities(sortedRing);
+            result = checkOrdered(priorities);
+        }
+        System.out.println("IIIIII: " + priorities);
+        if (result == 1) {
+            for (int i = 0; i < size / 2; i++) {
+                BondedAtom atom = sortedRing.get(i);
+                sortedRing.set(i, sortedRing.get(size - i - 1));
+                sortedRing.set(size - i - 1, atom);
+            }
+        }
+        return sortedRing;**/
+    }
+
+    /**
+     * Get the substituent priority list of ring.
+     *
+     * @param ring The ring
+     * @return the substituent priority list
+     */
+    private List<String> getRingPriorities(final List<BondedAtom> ring) {
+        List<String> priorities = new ArrayList<>();
+        for (int i = 0; i < ring.size(); i++) {
+            String priority = getSubstituentPriority(ring.get(i), ring);
+            priorities.add(priority);
+        }
+        return priorities;
+    }
+
+    /**
+     * Compare the two priority list.
+     * @param priorities1 First priority
+     * @param priorities2 Second priority
+     * @return 1: first > second, -1: first < second, 0: first == second
+     */
+    private int comparePriorities(final List<String> priorities1, final List<String> priorities2) {
+        int i = 0;
+        while (i < priorities1.size() && i < priorities2.size()) {
+            if (priorities1.get(i).compareTo(priorities2.get(i)) > 0) {
+                return 1;
+            } else if (priorities1.get(i).compareTo(priorities2.get(i)) < 0) {
+                return -1;
+            } else {
+                i++;
+            }
+        }
+        return 0;
+    }
+
+    /**
+     * Check if list is ordered.
+     *
+     * @param list The list to be checked
+     * @return -1: not ordered, 0: desc ordered, 1: asc ordered
+     */
+    private int checkOrdered(final List<String> list) {
+        int start = 0;
+        int end = list.size() - 1;
+        while (start < list.size() && list.get(start).isEmpty()) {
+            start++;
+        }
+        while (end >= 0 && list.get(end).isEmpty()) {
+            end--;
+        }
+        if (end > start) {
+            for (int i = start; i < end; i++) {
+                if (list.get(i).isEmpty()) {
+                    list.remove(i);
+                    end--;
+                }
+            }
+        }
+        boolean desc = true;
+        for (int i = 0; i < list.size() - 1; i++) {
+            if (list.get(i).compareTo(list.get(i + 1)) < 0) {
+                desc = false;
+                break;
+            }
+        }
+        boolean asc = true;
+        for (int i = 0; i < list.size() - 1; i++) {
+            if (list.get(i).compareTo(list.get(i + 1)) > 0) {
+                asc = false;
+                break;
+            }
+        }
+        if (desc) {
+            return 0;
+        } else if (asc) {
+            return 1;
+        } else {
+            return -1;
+        }
+    }
+
+    /**
+     * Rotate ring by 1 index.
+     * @param ring The ring
+     * @return The rotated ring
+     */
+    private List<BondedAtom> rotateRingOnce(final List<BondedAtom> ring) {
+        List<BondedAtom> rotatedRing = new ArrayList<>();
+        int i = 0;
+        while (i < ring.size()) {
+            int index = (i + 1) % ring.size();
+            rotatedRing.add(ring.get(index));
+            i++;
+        }
+        return rotatedRing;
     }
 
     /*

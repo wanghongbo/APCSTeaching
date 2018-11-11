@@ -174,6 +174,7 @@ public abstract class OrganicMoleculeBuilder {
 
     /**
      * Gets how many bonds of the given carbon are not satisfied in the backbone.
+     *
      * @param position The zero-based index of the carbon.
      * @return How many bonds the given carbon has yet to make.
      */
