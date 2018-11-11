@@ -32,7 +32,3 @@ processTestResources {
 defaultTasks 'grade'
 
 // vim: ts=4:sw=4:et:ft=groovy
-
-tasks.withType(JavaCompile) {
-    options.encoding = "UTF-8"
-}

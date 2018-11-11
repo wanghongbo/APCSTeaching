@@ -191,10 +191,10 @@ public final class BondedAtom implements Iterable<BondedAtom> {
     }
 
     /**
-     * Return the count of high-priority substituents attached to this atom.
+     * Return the count of low-priority substituents attached to this atom.
      *
      * @param backbone the backbone of this molecule to use to identify off-backbone carbons
-     * @return the count of high-priority substituents attached to this atom
+     * @return the count of low-priority substituents attached to this atom
      */
     public int lowPrioritySubstituentCount(final List<BondedAtom> backbone) {
         int substituents = 0;
@@ -347,7 +347,7 @@ public final class BondedAtom implements Iterable<BondedAtom> {
          */
         @Override
         public String toString() {
-            return "{BondInfo " + "-=≡".substring(count - 1, count) + atom.getElement().getSymbol() + "}";
+            return "{BondInfo " + "-=".substring(count - 1, count) + atom.getElement().getSymbol() + "}";
         }
     }
 }

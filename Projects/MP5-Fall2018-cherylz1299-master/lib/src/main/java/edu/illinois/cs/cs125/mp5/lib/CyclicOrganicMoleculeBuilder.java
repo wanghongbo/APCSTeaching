@@ -43,7 +43,6 @@ public final class CyclicOrganicMoleculeBuilder extends OrganicMoleculeBuilder {
     @Override
     protected void finishBackbone(final BondedAtom first, final BondedAtom[] firstBonds,
                                   final BondedAtom last, final BondedAtom[] lastBonds) {
-        // 如果是圆形分子，因为freeValence为2，所以buildBackbone()后，分子式首尾的碳元素的相邻元素会有一个位置空着，而线性分子则会全被氢元素填充满
         for (int i = 0; i < firstBonds.length; i++) {
             if (firstBonds[i] == null) {
                 firstBonds[i] = last;
