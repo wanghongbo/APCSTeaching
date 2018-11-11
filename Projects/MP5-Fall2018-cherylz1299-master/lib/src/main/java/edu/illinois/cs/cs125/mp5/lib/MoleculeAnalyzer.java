@@ -296,16 +296,24 @@ public class MoleculeAnalyzer {
      * @return The Sorted backbone
      */
     private List<BondedAtom> sortLinearBackbone(final List<BondedAtom> linearBackbone) {
-        int substituentIndex = 0;
+        System.out.println("--------start-------------------------------- ");
+        int maxPriorityIndex = 0;
+        String maxPriority = "";
         int size = linearBackbone.size();
         for (int i = 0; i < size; i++) {
             BondedAtom atom = linearBackbone.get(i);
+            /* Easy way.
             if (atom.hasSubstituent(linearBackbone)) {
-                substituentIndex = i;
+                maxPriorityIndex = i;
                 break;
+            }*/
+            String priority = getSubstituentPriority(atom, linearBackbone);
+            if (priority.compareTo(maxPriority) > 0) {
+                maxPriorityIndex = i;
+                maxPriority = priority;
             }
         }
-        if (substituentIndex > (size - 1) / 2) {
+        if (maxPriorityIndex > (size - 1) / 2) {
             List<BondedAtom> sortedBackbone = new ArrayList<>();
             for (int i = size - 1; i >= 0; i--) {
                 sortedBackbone.add(linearBackbone.get(i));
@@ -314,6 +322,71 @@ public class MoleculeAnalyzer {
         } else {
             return linearBackbone;
         }
+    }
+
+    /**
+     * Define atom priority.
+     *
+     * @param atom The atom
+     * @param backbone The backbone this atom attached to
+     * @return The priority of this atom
+     */
+    private String getSubstituentPriority(final BondedAtom atom, final List<BondedAtom> backbone) {
+        String priority = "";
+        if (atom.hasSubstituent(backbone)) {
+            for (int i = 0; i < atom.getBondInfo().size(); i++) {
+                BondedAtom neighbor = atom.getConnectedAtom(i);
+                if (!backbone.contains(neighbor)) {
+                    int bondCount = atom.getBondInfo().get(i).getCount();
+                    if (neighbor.getElement() != ChemicalElement.HYDROGEN) {
+                        System.out.println("----neighbor: " + neighbor.getElement().toString());
+//                    System.out.println("----neighbor index: " + i);
+                        System.out.println("----bondCount: " + bondCount);
+                    }
+                    String value = "";
+                    if (neighbor.getElement() == ChemicalElement.OXYGEN && bondCount == 2) {
+                        value = "6";
+                    } else if (neighbor.getElement() == ChemicalElement.OXYGEN && bondCount == 1) {
+                        value = "5";
+                    } else if (neighbor.getElement() == ChemicalElement.BROMINE) {
+                        value = "4";
+                    } else if (neighbor.getElement() == ChemicalElement.CHLORINE) {
+                        value = "3";
+                    } else if (neighbor.getElement() == ChemicalElement.FLUORINE) {
+                        value = "2";
+                    } else if (neighbor.getElement() == ChemicalElement.CARBON) {
+                        value = "1";
+                    }
+                    priority = insert(priority, value);
+                }
+            }
+        }
+        if (!priority.equals("")) {
+            System.out.println("----priority: " + priority);
+        } else {
+            System.out.println("_");
+        }
+        return priority;
+    }
+
+    /**
+     * Insert the priority value and keep the priority string sorted.
+     *
+     * @param priority The priority string
+     * @param value    The priority value to be insert
+     * @return The new priority string
+     */
+    private static String insert(final String priority, final String value) {
+        int index = priority.length() - 1;
+        while (index >= 0) {
+            String s = priority.substring(index, index + 1);
+            if (value.compareTo(s) > 0) {
+                index--;
+            } else {
+                break;
+            }
+        }
+        return priority.substring(0, index + 1) + value + priority.substring(index + 1, priority.length());
     }
 
     /**
@@ -339,29 +412,6 @@ public class MoleculeAnalyzer {
             i++;
         }
         return sortedRing;
-    }
-
-    /**
-     * Define atom priority.
-     *
-     * @param atom The atom
-     * @return The priority of this atom
-     */
-    private int getSubstituentAtomPriority(final BondedAtom atom) {
-        if (atom.getElement() == ChemicalElement.OXYGEN && atom.getBondInfo().size() == 1) {
-            return 5;
-        } else if (atom.getElement() == ChemicalElement.OXYGEN && atom.getBondInfo().size() == 2) {
-            return 4;
-        } else if (atom.getElement() == ChemicalElement.BROMINE) {
-            return 3;
-        } else if (atom.getElement() == ChemicalElement.CHLORINE) {
-            return 2;
-        } else if (atom.getElement() == ChemicalElement.FLUORINE) {
-            return 1;
-        } else if (atom.getElement() == ChemicalElement.HYDROGEN) {
-            return 0;
-        }
-        return -1;
     }
 
     /*
