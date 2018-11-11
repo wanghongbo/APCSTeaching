@@ -325,9 +325,9 @@ public class MoleculeAnalyzer {
                     }
                     String value = "";
                     if (neighbor.getElement() == ChemicalElement.OXYGEN && bondCount == 2) {
-                        value = "6";
+                        value = "7";
                     } else if (neighbor.getElement() == ChemicalElement.OXYGEN && bondCount == 1) {
-                        value = "5";
+                        value = "6";
                     } else if (neighbor.getElement() == ChemicalElement.BROMINE) {
                         value = "4";
                     } else if (neighbor.getElement() == ChemicalElement.CHLORINE) {
@@ -339,6 +339,9 @@ public class MoleculeAnalyzer {
                     }
                     priority = insert(priority, value);
                 }
+            }
+            if (priority.equals("11")) {
+                priority = "5";
             }
         }
         if (!priority.equals("")) {
@@ -475,24 +478,12 @@ public class MoleculeAnalyzer {
             }
             count++;
         }
-        return maxRing;
 
-        /*
-        int result = checkOrdered(priorities);
-        while (result == -1) {
-            sortedRing = rotateRingOnce(sortedRing);
-            priorities = getRingPriorities(sortedRing);
-            result = checkOrdered(priorities);
+        for (BondedAtom atom: maxRing) {
+            System.out.println("********" + getSubstituentPriority(atom, maxRing));
         }
-        System.out.println("IIIIII: " + priorities);
-        if (result == 1) {
-            for (int i = 0; i < size / 2; i++) {
-                BondedAtom atom = sortedRing.get(i);
-                sortedRing.set(i, sortedRing.get(size - i - 1));
-                sortedRing.set(size - i - 1, atom);
-            }
-        }
-        return sortedRing;**/
+
+        return maxRing;
     }
 
     /**
