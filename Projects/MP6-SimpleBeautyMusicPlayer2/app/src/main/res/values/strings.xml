@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="app_name">BeautyMusic</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">BeautyMusic</string>
+    <string name="siger">siger</string>
+    <string name="artist">admin</string>
+    <string name="time">4:50</string>
+    <string name="cancel">cancel</string>
+    <string  name="confrim">confirm</string>
+    <string name="shuffle_none">shuffle is closed</string>
+    <string name="shuffle">shuffle open</string>
+    <string name="repeat_none">repeart is closed</string>
+    <string name="repeat_current">repeart open</string>
+    <string name="repeat_all">repeart all</string>
+    <string name="operation">operation</string>
+    <string name="playing">playint。。。</string>
+    <string name="skin_settings">skin setting</string>
+    <string name="menu_exit_txt">exit</string>
+    <string name="oftenuse">oftenuse</string>
+    <string name="about_infomation">about information</string>
+    <string name="brightness_title">brightness</string>
+    <string name="darkness_title">darkness</string>
+    <string name="info">info:</string>
+    <string name="dialog_messenge">exit？</string>
+	<string name="about_title">about</string>
+	<string name="menu_time_txt">time closure</string>
+</resources>

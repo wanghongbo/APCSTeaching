@@ -1,0 +1,7 @@
+#Mon Dec 10 00:23:08 CST 2018
+base.0=E\:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6d883cb58cbf6aa6122d7fc1f191780467623111
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=E\:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_20b456f603bdac9a0a501e66a7b7bbcf93de7df5\\classes.dex
+base.1=E\:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_20b456f603bdac9a0a501e66a7b7bbcf93de7df5
+file.0=E\:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6d883cb58cbf6aa6122d7fc1f191780467623111\\classes.dex

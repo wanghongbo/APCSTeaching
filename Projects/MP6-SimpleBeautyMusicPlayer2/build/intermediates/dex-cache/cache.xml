@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_20b456f603bdac9a0a501e66a7b7bbcf93de7df5\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0_f0ab625e2aa242d01aa2cd3c4d39a3cf5323d1f8.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e1b18b16a4a89938f9351e0ecc70832bb7d7c1a0">
+        <dex dex="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6d883cb58cbf6aa6122d7fc1f191780467623111\classes.dex" />
+    </item>
+
+</items>

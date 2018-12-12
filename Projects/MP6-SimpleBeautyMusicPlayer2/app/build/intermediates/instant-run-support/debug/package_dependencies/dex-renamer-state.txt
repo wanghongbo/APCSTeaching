@@ -1,0 +1,4 @@
+#Mon Dec 10 00:23:07 CST 2018
+base.0=E\:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-18.0.0_f0ab625e2aa242d01aa2cd3c4d39a3cf5323d1f8
+renamed.0=classes.dex
+file.0=E\:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-18.0.0_f0ab625e2aa242d01aa2cd3c4d39a3cf5323d1f8\\classes.dex
