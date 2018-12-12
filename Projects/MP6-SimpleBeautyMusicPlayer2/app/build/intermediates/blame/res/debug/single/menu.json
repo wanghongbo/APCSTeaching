@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\menu\\activity_main.xml"
+    },
+    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_main.xml",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\menu\\activity_main.xml"
     }

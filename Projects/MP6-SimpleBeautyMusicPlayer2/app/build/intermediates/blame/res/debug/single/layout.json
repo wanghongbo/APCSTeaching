@@ -4,10 +4,6 @@
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\play_queue_layout.xml"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\music_info_layout.xml",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\music_info_layout.xml"
-    },
-    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_layout.xml",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\menu_item_layout.xml"
     },
@@ -20,10 +16,6 @@
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\home_activity_layout.xml"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\play_queue_item_layout.xml",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\play_queue_item_layout.xml"
-    },
-    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\setting_top.xml",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\setting_top.xml"
     },
@@ -32,8 +24,64 @@
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\music_album.xml"
     },
     {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alert_dialog.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\alert_dialog.xml"
+    },
+    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\skinsetting_layout.xml",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\skinsetting_layout.xml"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\play_queue_layout.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\play_queue_layout.xml"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\music_list_item_layout.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\music_list_item_layout.xml"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu_about_layout.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\menu_about_layout.xml"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\setting_top.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\setting_top.xml"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\music_list_item_layout.xml",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\music_list_item_layout.xml"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\play_queue_item_layout.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\play_queue_item_layout.xml"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\play_activity_layout.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\play_activity_layout.xml"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\music_lyric.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\music_lyric.xml"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\music_info_layout.xml",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\music_info_layout.xml"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\home_activity_layout.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\home_activity_layout.xml"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu_item_layout.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\play_queue_item_layout.xml",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\play_queue_item_layout.xml"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\skinsetting_layout.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\skinsetting_layout.xml"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\context_dialog_layout.xml",
@@ -44,15 +92,23 @@
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\music_lyric.xml"
     },
     {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\music_info_layout.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\music_info_layout.xml"
+    },
+    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\menu_about_layout.xml",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\menu_about_layout.xml"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alert_dialog.xml",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\alert_dialog.xml"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\music_album.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\music_album.xml"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\music_list_item_layout.xml",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\music_list_item_layout.xml"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\context_dialog_layout.xml",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\context_dialog_layout.xml"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alert_dialog.xml",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\layout\\alert_dialog.xml"
     }
 ]

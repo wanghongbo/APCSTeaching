@@ -4,64 +4,32 @@
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\lately_player.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg02.jpg",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg02.jpg"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\player_progress_bg.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\player_progress_bg.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\download_icon_down.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\download_icon_down.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg03.jpg",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg03.jpg"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg04.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg04.jpg"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\repeat_current.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\repeat_current.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\repeat_none.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\repeat_none.png"
-    },
-    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ablumlayout_reflection_bg.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\ablumlayout_reflection_bg.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\bg_playback.jpg",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\bg_playback.jpg"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\pause_glow.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\pause_glow.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\voice_thumb_normal.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\voice_thumb_normal.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg03.jpg",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg03.jpg"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\voice_seekbar_bg.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\voice_seekbar_bg.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\download_icon_finish.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\download_icon_finish.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\volume_min_icon.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\volume_min_icon.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music5.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music5.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\back_return_normal.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\back_return_normal.png"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\local_singer.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\local_singer.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\local_custom.png",
@@ -72,80 +40,64 @@
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\repeat_all.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\voice_seekbar_one.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\voice_seekbar_one.png"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg05.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg05.jpg"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg04.jpg",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg04.jpg"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\defaultalbum.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\defaultalbum.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\local_album.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\local_album.png"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\btn_voice_normal.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\btn_voice_normal.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\media_player_progress_button.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\media_player_progress_button.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\next_glow.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\next_glow.png"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_search.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\player_progresslayout_bg.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\player_progresslayout_bg.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\bg.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\bg.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\btn_voice_press.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\btn_voice_press.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_search.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg05.jpg",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg05.jpg"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg03.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg03.jpg"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\playqueue_glow.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\playqueue_glow.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg02.jpg",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg02.jpg"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\pause_glow.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\pause_glow.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\now_playing2.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\now_playing2.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music4.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music4.png"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\btn_voice_press.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\btn_voice_press.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\local_file.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\local_file.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\now_playing.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\now_playing.png"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\now_playing2.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\now_playing2.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\shuffle.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\shuffle.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\btn_voice_normal.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\btn_voice_normal.png"
-    },
-    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music3.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music3.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\pause.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\pause.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_album.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\default_album.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\media_player_progress_bg.png",
@@ -160,80 +112,76 @@
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg05.jpg"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\next.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\next.png"
-    },
-    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\volume_max_icon.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\volume_max_icon.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\shuffle.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\shuffle.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\player_progress_playing.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\player_progress_playing.png"
     },
     {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\local_file.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\local_file.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\playlist_sign.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\playlist_sign.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg01.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg01.jpg"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\voice_seekbar_bg.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\voice_seekbar_bg.png"
+    },
+    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\previous_glow.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\previous_glow.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\shuffle_none.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\shuffle_none.png"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\now_playing.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\now_playing.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music2.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music2.png"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg01.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg01.jpg"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg06.jpg",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg06.jpg"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\previous.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\previous.png"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\player_progresslayout_bg.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\player_progresslayout_bg.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\shuffle_none.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\shuffle_none.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\item.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\item.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\local_singer.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\local_singer.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\voice_thumb_press.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\voice_thumb_press.png"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\next.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\next.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\playlist_sign.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\playlist_sign.png"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\playqueue.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\playqueue.png"
-    },
-    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg01.jpg",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg01.jpg"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\local_custom_like.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\local_custom_like.png"
-    },
-    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\defaultalbum.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\defaultalbum.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\skin_selected_bg_tip.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\skin_selected_bg_tip.png"
-    },
-    {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\play_glow.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\play_glow.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_album.png",
@@ -242,6 +190,342 @@
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\search_glow.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\search_glow.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ablumlayout_bg.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\ablumlayout_bg.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\download_icon_down.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\download_icon_down.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\volume_min_icon.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\volume_min_icon.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\skin_selected_bg_tip.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\skin_selected_bg_tip.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg07.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg07.jpg"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\bg_media_library_topbar.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\bg_media_library_topbar.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\volume_max_icon.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\volume_max_icon.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music4.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music4.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ablumlayout_reflection_bg.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\ablumlayout_reflection_bg.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg02.jpg",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg02.jpg"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\voice_thumb_normal.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\voice_thumb_normal.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\voice_seekbar_one.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\voice_seekbar_one.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\back_return_normal.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\back_return_normal.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\local_album.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\local_album.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg03.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg03.jpg"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg03.jpg",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg03.jpg"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\repeat_none.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\repeat_none.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\bg_playback.jpg",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\bg_playback.jpg"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\play.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\play.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\pause_glow.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\pause_glow.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\back_return_press.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\back_return_press.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg04.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg04.jpg"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\voice_thumb_normal.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\voice_thumb_normal.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\download_icon_finish.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\download_icon_finish.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg03.jpg",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg03.jpg"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\voice_seekbar_bg.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\voice_seekbar_bg.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\repeat_all.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\repeat_all.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\search.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\search.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music5.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music5.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\volume_min_icon.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\volume_min_icon.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\back_return_normal.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\back_return_normal.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music5.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music5.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\voice_seekbar_one.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\voice_seekbar_one.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg04.jpg",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg04.jpg"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\local_album.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\local_album.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\playqueue_glow.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\playqueue_glow.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\next_glow.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\next_glow.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\player_progresslayout_bg.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\player_progresslayout_bg.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\bg.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\bg.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\lately_player.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\lately_player.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\btn_voice_press.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\btn_voice_press.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\bg.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\bg.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_action_search.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\ic_action_search.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg05.jpg",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg05.jpg"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg02.jpg",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg02.jpg"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\now_playing2.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\now_playing2.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music4.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music4.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\now_playing.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\now_playing.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\media_player_progress_bg.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\media_player_progress_bg.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg05.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg05.jpg"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\repeat_none.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\repeat_none.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg02.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg02.jpg"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\next_glow.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\next_glow.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\btn_voice_normal.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\btn_voice_normal.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\previous.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\previous.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music3.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music3.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\search_glow.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\search_glow.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\next.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\next.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\local_custom.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\local_custom.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\media_player_progress_button.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\media_player_progress_button.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg06.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg06.jpg"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg06.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg06.jpg"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\shuffle_none.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\shuffle_none.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music2.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music2.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music2.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music2.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\repeat_current.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\repeat_current.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\item.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\item.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\previous.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\previous.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\item.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\item.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\player_progress_playing.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\player_progress_playing.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\local_singer.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\local_singer.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg02.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg02.jpg"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\bg_playback.jpg",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\bg_playback.jpg"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\local_custom_like.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\local_custom_like.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\voice_thumb_press.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\voice_thumb_press.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\playqueue.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\playqueue.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\play_glow.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\play_glow.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\local_custom_like.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\local_custom_like.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\voice_thumb_press.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\voice_thumb_press.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\skin_selected_bg_tip.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\skin_selected_bg_tip.png"
+    },
+    {
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\play_glow.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\play_glow.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ablumlayout_bg.png",
@@ -260,32 +544,44 @@
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\back_return_press.png"
     },
     {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\playqueue.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\playqueue.png"
+    },
+    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\search.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\search.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\previous_glow.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\previous_glow.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\main_bg06.jpg",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\main_bg06.jpg"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\bg_media_library_topbar.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\bg_media_library_topbar.png"
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_dialog.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\ic_dialog.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg01.jpg",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg01.jpg"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_dialog.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\ic_dialog.png"
-    },
-    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\preview_bg07.jpg",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\preview_bg07.jpg"
     },
     {
-        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\music.png",
-        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\music.png"
+        "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_dialog.png",
+        "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\ic_dialog.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\bg_media_library_topbar.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\bg_media_library_topbar.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\player_progress_buffering.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\player_progress_buffering.png"
     },
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\pause.png",

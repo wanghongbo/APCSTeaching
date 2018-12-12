@@ -189,16 +189,6 @@ public class PlayerActivity extends Activity {
 		public void onCallStateChanged(int state, String incomingNumber) {
 			switch (state) {
 			case TelephonyManager.CALL_STATE_IDLE: //
-				Intent intent = new Intent(PlayerActivity.this, PlayerService.class);
-				playBtn.setBackgroundResource(R.drawable.play_selector);
-				intent.setAction("com.wwj.media.MUSIC_SERVICE");
-				intent.putExtra("MSG", AppConstant.PlayerMsg.CONTINUE_MSG);
-				startService(intent);
-				isPlaying = false;
-				isPause = true;
-				break;
-			case TelephonyManager.CALL_STATE_OFFHOOK:
-			case TelephonyManager.CALL_STATE_RINGING:
 				Intent intent2 = new Intent(PlayerActivity.this, PlayerService.class);
 				playBtn.setBackgroundResource(R.drawable.pause_selector);
 				intent2.setAction("com.wwj.media.MUSIC_SERVICE");
@@ -206,6 +196,16 @@ public class PlayerActivity extends Activity {
 				startService(intent2);
 				isPlaying = true;
 				isPause = false;
+				break;
+			case TelephonyManager.CALL_STATE_OFFHOOK:
+			case TelephonyManager.CALL_STATE_RINGING:
+				Intent intent = new Intent(PlayerActivity.this, PlayerService.class);
+				playBtn.setBackgroundResource(R.drawable.play_selector);
+				intent.setAction("com.wwj.media.MUSIC_SERVICE");
+				intent.putExtra("MSG", AppConstant.PlayerMsg.CONTINUE_MSG);
+				startService(intent);
+				isPlaying = false;
+				isPause = true;
 				break;
 			default:
 				break;
@@ -351,14 +351,14 @@ public class PlayerActivity extends Activity {
 			switch (v.getId()) {
 			case R.id.play_music:
 				if (isPlaying) {
-					playBtn.setBackgroundResource(R.drawable.pause_selector);
+					playBtn.setBackgroundResource(R.drawable.play_selector);
 					intent.setAction("com.wwj.media.MUSIC_SERVICE");
 					intent.putExtra("MSG", AppConstant.PlayerMsg.PAUSE_MSG);
 					startService(intent);
 					isPlaying = false;
 					isPause = true;
 				} else if (isPause) {
-					playBtn.setBackgroundResource(R.drawable.play_selector);
+					playBtn.setBackgroundResource(R.drawable.pause_selector);
 					intent.setAction("com.wwj.media.MUSIC_SERVICE");
 					intent.putExtra("MSG", AppConstant.PlayerMsg.CONTINUE_MSG);
 					startService(intent);
@@ -585,9 +585,9 @@ public class PlayerActivity extends Activity {
 	 *
 	 */
 	public void previous_music() {
-		playBtn.setBackgroundResource(R.drawable.play_selector);
 		listPosition = listPosition - 1;
 		if (listPosition >= 0) {
+			playBtn.setBackgroundResource(R.drawable.pause_selector);
 			Mp3Info mp3Info = mp3Infos.get(listPosition);
 			showArtwork(mp3Info);
 			musicTitle.setText(mp3Info.getTitle());
@@ -599,9 +599,6 @@ public class PlayerActivity extends Activity {
 			intent.putExtra("listPosition", listPosition);
 			intent.putExtra("MSG", AppConstant.PlayerMsg.PRIVIOUS_MSG);
 			startService(intent);
-			
-			
-			
 		} else {
 			listPosition = 0;
 			Toast.makeText(PlayerActivity.this, "2", Toast.LENGTH_SHORT)
@@ -613,9 +610,9 @@ public class PlayerActivity extends Activity {
 	 *
 	 */
 	public void next_music() {
-		playBtn.setBackgroundResource(R.drawable.play_selector);
 		listPosition = listPosition + 1;
 		if (listPosition <= mp3Infos.size() - 1) {
+			playBtn.setBackgroundResource(R.drawable.pause_selector);
 			Mp3Info mp3Info = mp3Infos.get(listPosition);
 			showArtwork(mp3Info);
 			url = mp3Info.getUrl();

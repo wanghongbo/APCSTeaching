@@ -1,54 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="23"
+    abi="x86_64,x86"
+    api-level="25"
     build-mode="FULL"
-    density="xxhdpi"
+    density="420dpi"
     format="10"
     plugin-version="2.3.1"
-    timestamp="1544372568970"
+    timestamp="1544619720185"
     token="-5416212441405144092"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="874" />
+        duration="9093" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="969" />
+        duration="1112" />
     <task
         name="verifier"
-        duration="329" />
+        duration="540" />
 
     <artifact
-        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
         type="SPLIT" />
     <artifact
-        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
     <artifact
-        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
     <artifact
-        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
         type="SPLIT" />
     <artifact
-        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\outputs\apk\app-debug.apk"
+        type="SPLIT_MAIN" />
+    <artifact
+        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
         location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
         type="SPLIT" />
     <artifact
         location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -57,39 +84,72 @@
         location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
     <artifact
-        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\outputs\apk\app-debug.apk"
-        type="SPLIT_MAIN" />
+        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1544372568970"
+        timestamp="1544619720185"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\APCSTeaching\Projects\MP6-SimpleBeautyMusicPlayer2\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+        <artifact
+            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
             location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
             location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
@@ -98,8 +158,14 @@
             location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\MUSIC\SimpleBeautyMusicPlayer2\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>

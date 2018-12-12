@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_launcher.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
+    },
+    {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_launcher.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
     }

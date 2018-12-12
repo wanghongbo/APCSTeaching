@@ -2,5 +2,9 @@
     {
         "merged": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\fast_seek_progress.9.png",
         "source": "E:\\MUSIC\\SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\fast_seek_progress.9.png"
+    },
+    {
+        "merged": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\fast_seek_progress.9.png",
+        "source": "E:\\APCSTeaching\\Projects\\MP6-SimpleBeautyMusicPlayer2\\app\\src\\main\\res\\drawable-mdpi\\fast_seek_progress.9.png"
     }
 ]
